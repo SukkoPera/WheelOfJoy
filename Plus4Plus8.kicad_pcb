@@ -209,7 +209,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 6310481B)
-    (at 86.995 89.789 270)
+    (at 130.937 121.793 270)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /6320ECDF)
     (fp_text reference CN1 (at 0 -2.7 90) (layer F.SilkS)
@@ -275,7 +275,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 63104846)
-    (at 86.614 56.769 270)
+    (at 130.556 88.773 270)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /63244454)
     (fp_text reference CN2 (at 0 -2.7 90) (layer F.SilkS)
@@ -341,7 +341,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 63104871)
-    (at 85.852 26.289 270)
+    (at 129.794 58.293 270)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /6324AD84)
     (fp_text reference CN3 (at 0 -2.7 90) (layer F.SilkS)
@@ -407,7 +407,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 6310489C)
-    (at 99.441 -0.508 180)
+    (at 143.383 31.496 180)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /6324ADD0)
     (fp_text reference CN4 (at 0 -2.7) (layer F.SilkS)
@@ -473,7 +473,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 631048C7)
-    (at 131.064 -1.016 180)
+    (at 175.006 30.988 180)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /6325F944)
     (fp_text reference CN5 (at 0 -2.7) (layer F.SilkS)
@@ -539,7 +539,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 631048F2)
-    (at 144.653 27.178 90)
+    (at 188.595 59.182 90)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /6325F990)
     (fp_text reference CN6 (at 0 -2.7 90) (layer F.SilkS)
@@ -605,7 +605,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 6310491D)
-    (at 144.653 59.055 90)
+    (at 188.595 91.059 90)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /6325F9DC)
     (fp_text reference CN7 (at 0 -2.7 90) (layer F.SilkS)
@@ -671,7 +671,7 @@
   )
 
   (module Plus4Plus8:DB_9M (layer F.Cu) (tedit 5FEB939F) (tstamp 63104948)
-    (at 144.145 91.948 90)
+    (at 188.087 123.952 90)
     (descr "D-SUB 9 pin plug, Tyco P/N 4-338168-2")
     (path /6325FA28)
     (fp_text reference CN8 (at 0 -2.7 90) (layer F.SilkS)
@@ -737,7 +737,7 @@
   )
 
   (module Plus4Plus8:PLUS4_USERPORT (layer F.Cu) (tedit 6208D4F9) (tstamp 6310496C)
-    (at 114.3 117.094)
+    (at 158.242 149.098)
     (path /63202686)
     (attr smd)
     (fp_text reference CN9 (at 25.74 -2) (layer F.SilkS)
@@ -799,7 +799,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 63104985)
-    (at 100.711 95.758 90)
+    (at 144.653 127.762 90)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /6320D64B)
@@ -846,7 +846,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 6310499E)
-    (at 100.584 63.881 90)
+    (at 144.526 95.885 90)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /632440D8)
@@ -893,7 +893,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 631049B7)
-    (at 100.203 34.798 90)
+    (at 144.145 66.802 90)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /6324A96C)
@@ -940,7 +940,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 631049D0)
-    (at 111.633 12.192 180)
+    (at 155.575 44.196 180)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /6324ADC6)
@@ -987,7 +987,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 631049E9)
-    (at 131.318 12.065 180)
+    (at 175.26 44.069 180)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /6325F3F4)
@@ -1034,7 +1034,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 63104A02)
-    (at 131.191 33.909 90)
+    (at 175.133 65.913 90)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /6325F986)
@@ -1081,7 +1081,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 63104A1B)
-    (at 130.937 65.024 90)
+    (at 174.879 97.028 90)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /6325F9D2)
@@ -1128,7 +1128,7 @@
   )
 
   (module Resistor_THT:R_Array_SIP6 (layer F.Cu) (tedit 5A14249F) (tstamp 63104A34)
-    (at 130.556 98.171 90)
+    (at 174.498 130.175 90)
     (descr "6-pin Resistor SIP pack")
     (tags R)
     (path /6325FA1E)
@@ -1175,7 +1175,7 @@
   )
 
   (module Package_DIP:DIP-16_W7.62mm_LongPads (layer F.Cu) (tedit 5A02E8C5) (tstamp 63104A58)
-    (at 106.934 27.94 90)
+    (at 150.876 59.944 90)
     (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads")
     (path /631FFF1A)
@@ -1243,7 +1243,7 @@
   )
 
   (module Package_DIP:DIP-16_W7.62mm_LongPads (layer F.Cu) (tedit 5A02E8C5) (tstamp 63104A7C)
-    (at 106.68 46.99 90)
+    (at 150.622 78.994 90)
     (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads")
     (path /63497199)
@@ -1311,7 +1311,7 @@
   )
 
   (module Package_DIP:DIP-16_W7.62mm_LongPads (layer F.Cu) (tedit 5A02E8C5) (tstamp 63104AA0)
-    (at 107.188 64.643 90)
+    (at 151.13 96.647 90)
     (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads")
     (path /634AED8E)
@@ -1379,7 +1379,7 @@
   )
 
   (module Package_DIP:DIP-16_W7.62mm_LongPads (layer F.Cu) (tedit 5A02E8C5) (tstamp 630FE369)
-    (at 107.315 81.661 90)
+    (at 151.257 113.665 90)
     (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads")
     (path /63121140)
@@ -1447,7 +1447,7 @@
   )
 
   (module Package_DIP:DIP-16_W7.62mm_LongPads (layer F.Cu) (tedit 5A02E8C5) (tstamp 630FE38D)
-    (at 106.68 98.679 90)
+    (at 150.622 130.683 90)
     (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads")
     (path /6315E2F4)
