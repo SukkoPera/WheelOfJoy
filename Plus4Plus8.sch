@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Plus4Plus8"
-Date "2022-08-31"
+Date "2022-09-02"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 ""
@@ -79,17 +79,6 @@ d4
 Text Label 3315 2825 2    50   ~ 0
 d5
 $Comp
-L Device:R_Network05 RN1
-U 1 1 6320D64B
-P 6680 1240
-F 0 "RN1" H 6968 1286 50  0000 L CNN
-F 1 "4.7k" H 6968 1195 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 7055 1240 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6680 1240 50  0001 C CNN
-	1    6680 1240
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:DB9_Male_MountingHoles CN1
 U 1 1 6320ECDF
 P 5800 1775
@@ -115,16 +104,6 @@ Wire Wire Line
 	5800 2460 5800 2425
 NoConn ~ 6100 1475
 Wire Wire Line
-	6100 1575 6780 1575
-Wire Wire Line
-	6100 1775 6680 1775
-Wire Wire Line
-	6100 1975 6580 1975
-Wire Wire Line
-	6100 2075 6880 2075
-Wire Wire Line
-	6100 2175 6480 2175
-Wire Wire Line
 	6100 1675 6175 1675
 Wire Wire Line
 	6175 1675 6175 2425
@@ -148,28 +127,9 @@ F 3 "" H 6260 925 50  0001 C CNN
 	1    6260 925 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6260 980  6480 980 
-Wire Wire Line
-	6480 980  6480 1040
 Connection ~ 6260 980 
 Wire Wire Line
 	6260 980  6260 925 
-Wire Wire Line
-	6480 1440 6480 2175
-Connection ~ 6480 2175
-Wire Wire Line
-	6580 1440 6580 1975
-Connection ~ 6580 1975
-Wire Wire Line
-	6680 1440 6680 1775
-Connection ~ 6680 1775
-Wire Wire Line
-	6780 1440 6780 1575
-Connection ~ 6780 1575
-Wire Wire Line
-	6880 1440 6880 2075
-Connection ~ 6880 2075
 Wire Wire Line
 	6100 1375 6260 1375
 Connection ~ 6260 1375
@@ -201,16 +161,6 @@ Wire Wire Line
 	5800 5100 5800 5065
 NoConn ~ 6100 4115
 Wire Wire Line
-	6100 4215 6780 4215
-Wire Wire Line
-	6100 4415 6680 4415
-Wire Wire Line
-	6100 4615 6580 4615
-Wire Wire Line
-	6100 4715 6880 4715
-Wire Wire Line
-	6100 4815 6480 4815
-Wire Wire Line
 	6100 4315 6175 4315
 Wire Wire Line
 	6175 4315 6175 5065
@@ -241,21 +191,6 @@ Wire Wire Line
 Connection ~ 6260 3620
 Wire Wire Line
 	6260 3620 6260 3565
-Wire Wire Line
-	6480 4080 6480 4815
-Connection ~ 6480 4815
-Wire Wire Line
-	6580 4080 6580 4615
-Connection ~ 6580 4615
-Wire Wire Line
-	6680 4080 6680 4415
-Connection ~ 6680 4415
-Wire Wire Line
-	6780 4080 6780 4215
-Connection ~ 6780 4215
-Wire Wire Line
-	6880 4080 6880 4715
-Connection ~ 6880 4715
 Wire Wire Line
 	6100 4015 6260 4015
 Connection ~ 6260 4015
@@ -298,16 +233,6 @@ Wire Wire Line
 	5800 7865 5800 7830
 NoConn ~ 6100 6880
 Wire Wire Line
-	6100 6980 6780 6980
-Wire Wire Line
-	6100 7180 6680 7180
-Wire Wire Line
-	6100 7380 6580 7380
-Wire Wire Line
-	6100 7480 6880 7480
-Wire Wire Line
-	6100 7580 6480 7580
-Wire Wire Line
 	6100 7080 6175 7080
 Wire Wire Line
 	6175 7080 6175 7830
@@ -338,21 +263,6 @@ Wire Wire Line
 Connection ~ 6260 6385
 Wire Wire Line
 	6260 6385 6260 6330
-Wire Wire Line
-	6480 6845 6480 7580
-Connection ~ 6480 7580
-Wire Wire Line
-	6580 6845 6580 7380
-Connection ~ 6580 7380
-Wire Wire Line
-	6680 6845 6680 7180
-Connection ~ 6680 7180
-Wire Wire Line
-	6780 6845 6780 6980
-Connection ~ 6780 6980
-Wire Wire Line
-	6880 6845 6880 7480
-Connection ~ 6880 7480
 Wire Wire Line
 	6100 6780 6260 6780
 Connection ~ 6260 6780
@@ -395,16 +305,6 @@ Wire Wire Line
 	5795 10715 5795 10680
 NoConn ~ 6095 9730
 Wire Wire Line
-	6095 9830 6775 9830
-Wire Wire Line
-	6095 10030 6675 10030
-Wire Wire Line
-	6095 10230 6575 10230
-Wire Wire Line
-	6095 10330 6875 10330
-Wire Wire Line
-	6095 10430 6475 10430
-Wire Wire Line
 	6095 9930 6170 9930
 Wire Wire Line
 	6170 9930 6170 10680
@@ -435,21 +335,6 @@ Wire Wire Line
 Connection ~ 6255 9235
 Wire Wire Line
 	6255 9235 6255 9180
-Wire Wire Line
-	6475 9695 6475 10430
-Connection ~ 6475 10430
-Wire Wire Line
-	6575 9695 6575 10230
-Connection ~ 6575 10230
-Wire Wire Line
-	6675 9695 6675 10030
-Connection ~ 6675 10030
-Wire Wire Line
-	6775 9695 6775 9830
-Connection ~ 6775 9830
-Wire Wire Line
-	6875 9695 6875 10330
-Connection ~ 6875 10330
 Wire Wire Line
 	6095 9630 6255 9630
 Connection ~ 6255 9630
@@ -919,25 +804,17 @@ Wire Wire Line
 Wire Wire Line
 	7325 2805 12105 2805
 Wire Wire Line
-	6480 2175 7325 2175
-Wire Wire Line
 	7325 4815 7325 2905
 Wire Wire Line
 	7325 2905 12105 2905
-Wire Wire Line
-	6480 4815 7325 4815
 Wire Wire Line
 	7435 7580 7435 3005
 Wire Wire Line
 	7435 3005 12105 3005
 Wire Wire Line
-	6480 7580 7435 7580
-Wire Wire Line
 	7540 10430 7540 3105
 Wire Wire Line
 	7540 3105 12105 3105
-Wire Wire Line
-	6475 10430 7540 10430
 Wire Wire Line
 	10250 2175 10250 3205
 Wire Wire Line
@@ -1141,25 +1018,17 @@ Wire Wire Line
 Wire Wire Line
 	7650 5460 12105 5460
 Wire Wire Line
-	6580 1975 7650 1975
-Wire Wire Line
 	7750 4615 7750 5560
 Wire Wire Line
 	7750 5560 12105 5560
-Wire Wire Line
-	6580 4615 7750 4615
 Wire Wire Line
 	7650 7380 7650 5660
 Wire Wire Line
 	7650 5660 12105 5660
 Wire Wire Line
-	6580 7380 7650 7380
-Wire Wire Line
 	12105 5760 7750 5760
 Wire Wire Line
 	7750 5760 7750 10230
-Wire Wire Line
-	6575 10230 7750 10230
 Wire Wire Line
 	10685 1975 10685 5860
 Wire Wire Line
@@ -1189,25 +1058,17 @@ Wire Wire Line
 Wire Wire Line
 	7850 8210 12105 8210
 Wire Wire Line
-	6680 1775 7850 1775
-Wire Wire Line
 	12105 8310 7950 8310
 Wire Wire Line
 	7950 8310 7950 4415
-Wire Wire Line
-	6680 4415 7950 4415
 Wire Wire Line
 	12105 8410 8045 8410
 Wire Wire Line
 	8045 8410 8045 7180
 Wire Wire Line
-	6680 7180 8045 7180
-Wire Wire Line
 	7850 10030 7850 8510
 Wire Wire Line
 	7850 8510 12105 8510
-Wire Wire Line
-	6675 10030 7850 10030
 Wire Wire Line
 	10875 1775 10875 8610
 Wire Wire Line
@@ -1407,8 +1268,6 @@ Wire Wire Line
 Wire Wire Line
 	10975 4030 14030 4030
 Wire Wire Line
-	6780 1575 7945 1575
-Wire Wire Line
 	8060 4215 8060 5355
 Wire Wire Line
 	8060 5355 11075 5355
@@ -1416,8 +1275,6 @@ Wire Wire Line
 	11075 5355 11075 4130
 Wire Wire Line
 	11075 4130 14030 4130
-Wire Wire Line
-	6780 4215 8060 4215
 Wire Wire Line
 	8045 6980 8045 5860
 Wire Wire Line
@@ -1431,8 +1288,6 @@ Wire Wire Line
 Wire Wire Line
 	11170 4230 14030 4230
 Wire Wire Line
-	6780 6980 8045 6980
-Wire Wire Line
 	8145 9830 8145 5960
 Wire Wire Line
 	8145 5960 10255 5960
@@ -1444,8 +1299,6 @@ Wire Wire Line
 	11260 5020 11260 4330
 Wire Wire Line
 	11260 4330 14030 4330
-Wire Wire Line
-	6775 9830 8145 9830
 Wire Wire Line
 	11345 1575 11345 4430
 Wire Wire Line
@@ -1477,8 +1330,6 @@ Wire Wire Line
 Wire Wire Line
 	11075 6760 14030 6760
 Wire Wire Line
-	6880 2075 8245 2075
-Wire Wire Line
 	8350 4715 8350 6160
 Wire Wire Line
 	8350 6160 10370 6160
@@ -1486,8 +1337,6 @@ Wire Wire Line
 	10370 6160 10370 6860
 Wire Wire Line
 	10370 6860 14030 6860
-Wire Wire Line
-	6880 4715 8350 4715
 Wire Wire Line
 	8245 7480 8245 8105
 Wire Wire Line
@@ -1497,8 +1346,6 @@ Wire Wire Line
 Wire Wire Line
 	11535 6960 14030 6960
 Wire Wire Line
-	6880 7480 8245 7480
-Wire Wire Line
 	8350 10330 8350 8000
 Wire Wire Line
 	8350 8000 11170 8000
@@ -1506,8 +1353,6 @@ Wire Wire Line
 	11170 8000 11170 7060
 Wire Wire Line
 	11170 7060 14030 7060
-Wire Wire Line
-	6875 10330 8350 10330
 Wire Wire Line
 	11630 2075 11630 7160
 Wire Wire Line
@@ -1551,7 +1396,7 @@ U 1 1 635454DA
 P 2430 5885
 F 0 "C1" H 2545 5931 50  0000 L CNN
 F 1 "100n" H 2545 5840 50  0000 L CNN
-F 2 "" H 2468 5735 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 2468 5735 50  0001 C CNN
 F 3 "~" H 2430 5885 50  0001 C CNN
 	1    2430 5885
 	1    0    0    -1  
@@ -1588,7 +1433,7 @@ U 1 1 635BABF1
 P 2865 5885
 F 0 "C2" H 2980 5931 50  0000 L CNN
 F 1 "100n" H 2980 5840 50  0000 L CNN
-F 2 "" H 2903 5735 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 2903 5735 50  0001 C CNN
 F 3 "~" H 2865 5885 50  0001 C CNN
 	1    2865 5885
 	1    0    0    -1  
@@ -1625,7 +1470,7 @@ U 1 1 635E2C01
 P 3315 5885
 F 0 "C3" H 3430 5931 50  0000 L CNN
 F 1 "100n" H 3430 5840 50  0000 L CNN
-F 2 "" H 3353 5735 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 3353 5735 50  0001 C CNN
 F 3 "~" H 3315 5885 50  0001 C CNN
 	1    3315 5885
 	1    0    0    -1  
@@ -1662,7 +1507,7 @@ U 1 1 635E2C21
 P 3750 5885
 F 0 "C4" H 3865 5931 50  0000 L CNN
 F 1 "100n" H 3865 5840 50  0000 L CNN
-F 2 "" H 3788 5735 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 3788 5735 50  0001 C CNN
 F 3 "~" H 3750 5885 50  0001 C CNN
 	1    3750 5885
 	1    0    0    -1  
@@ -1699,7 +1544,7 @@ U 1 1 6360CB01
 P 4190 5885
 F 0 "C5" H 4305 5931 50  0000 L CNN
 F 1 "100n" H 4305 5840 50  0000 L CNN
-F 2 "" H 4228 5735 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 4228 5735 50  0001 C CNN
 F 3 "~" H 4190 5885 50  0001 C CNN
 	1    4190 5885
 	1    0    0    -1  
@@ -1751,7 +1596,7 @@ U 1 1 63690C73
 P 1985 5885
 F 0 "C6" H 2100 5931 50  0000 L CNN
 F 1 "100u" H 2100 5840 50  0000 L CNN
-F 2 "" H 1985 5885 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1985 5885 50  0001 C CNN
 F 3 "~" H 1985 5885 50  0001 C CNN
 	1    1985 5885
 	1    0    0    -1  
@@ -1816,6 +1661,160 @@ Wire Wire Line
 	2985 3325 3315 3325
 NoConn ~ 2985 3425
 NoConn ~ 2985 3525
+Text Label 3315 3325 2    50   ~ 0
+~reset
+Wire Wire Line
+	6260 980  6480 980 
+Wire Wire Line
+	6100 4815 6880 4815
+Wire Wire Line
+	6100 4615 6780 4615
+Wire Wire Line
+	6100 4415 6680 4415
+Wire Wire Line
+	6100 4715 6480 4715
+Wire Wire Line
+	6100 4215 6580 4215
+Wire Wire Line
+	6880 4080 6880 4815
+Connection ~ 6880 4815
+Wire Wire Line
+	6880 4815 7325 4815
+Wire Wire Line
+	6780 4080 6780 4615
+Connection ~ 6780 4615
+Wire Wire Line
+	6780 4615 7750 4615
+Wire Wire Line
+	6680 4080 6680 4415
+Connection ~ 6680 4415
+Wire Wire Line
+	6680 4415 7950 4415
+Wire Wire Line
+	6580 4080 6580 4215
+Connection ~ 6580 4215
+Wire Wire Line
+	6580 4215 8060 4215
+Wire Wire Line
+	6480 4080 6480 4715
+Connection ~ 6480 4715
+Wire Wire Line
+	6480 4715 8350 4715
+Wire Wire Line
+	6100 7580 6880 7580
+Wire Wire Line
+	6100 7380 6780 7380
+Wire Wire Line
+	6100 7180 6680 7180
+Wire Wire Line
+	6100 6980 6580 6980
+Wire Wire Line
+	6100 7480 6480 7480
+Wire Wire Line
+	6880 6845 6880 7580
+Connection ~ 6880 7580
+Wire Wire Line
+	6880 7580 7435 7580
+Wire Wire Line
+	6780 6845 6780 7380
+Connection ~ 6780 7380
+Wire Wire Line
+	6780 7380 7650 7380
+Wire Wire Line
+	6680 6845 6680 7180
+Connection ~ 6680 7180
+Wire Wire Line
+	6680 7180 8045 7180
+Wire Wire Line
+	6580 6845 6580 6980
+Connection ~ 6580 6980
+Wire Wire Line
+	6580 6980 8045 6980
+Wire Wire Line
+	6480 6845 6480 7480
+Connection ~ 6480 7480
+Wire Wire Line
+	6480 7480 8245 7480
+Wire Wire Line
+	6095 10430 6875 10430
+Wire Wire Line
+	6095 10230 6775 10230
+Wire Wire Line
+	6095 10030 6675 10030
+Wire Wire Line
+	6095 9830 6575 9830
+Wire Wire Line
+	6095 10330 6475 10330
+Wire Wire Line
+	6875 9695 6875 10430
+Connection ~ 6875 10430
+Wire Wire Line
+	6875 10430 7540 10430
+Wire Wire Line
+	6775 9695 6775 10230
+Connection ~ 6775 10230
+Wire Wire Line
+	6775 10230 7750 10230
+Wire Wire Line
+	6675 9695 6675 10030
+Connection ~ 6675 10030
+Wire Wire Line
+	6675 10030 7850 10030
+Wire Wire Line
+	6575 9695 6575 9830
+Connection ~ 6575 9830
+Wire Wire Line
+	6575 9830 8145 9830
+Wire Wire Line
+	6475 9695 6475 10330
+Connection ~ 6475 10330
+Wire Wire Line
+	6475 10330 8350 10330
+Wire Wire Line
+	6100 2175 6880 2175
+Wire Wire Line
+	6100 1975 6780 1975
+Wire Wire Line
+	6100 1775 6680 1775
+Wire Wire Line
+	6100 1575 6580 1575
+Wire Wire Line
+	6100 2075 6480 2075
+Wire Wire Line
+	6480 1040 6480 980 
+$Comp
+L Device:R_Network05 RN1
+U 1 1 6320D64B
+P 6680 1240
+F 0 "RN1" H 6968 1286 50  0000 L CNN
+F 1 "4.7k" H 6968 1195 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 7055 1240 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6680 1240 50  0001 C CNN
+	1    6680 1240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6880 1440 6880 2175
+Connection ~ 6880 2175
+Wire Wire Line
+	6880 2175 7325 2175
+Wire Wire Line
+	6780 1440 6780 1975
+Connection ~ 6780 1975
+Wire Wire Line
+	6780 1975 7650 1975
+Wire Wire Line
+	6680 1440 6680 1775
+Connection ~ 6680 1775
+Wire Wire Line
+	6680 1775 7850 1775
+Wire Wire Line
+	6580 1440 6580 1575
+Connection ~ 6580 1575
+Wire Wire Line
+	6580 1575 7945 1575
+Wire Wire Line
+	6480 1440 6480 2075
 Wire Bus Line
 	13345 2405 13345 2805
 Wire Bus Line
@@ -1828,6 +1827,7 @@ Wire Bus Line
 	15270 6360 15270 6760
 Wire Bus Line
 	3415 2625 3415 4050
-Text Label 3315 3325 2    50   ~ 0
-~reset
+Connection ~ 6480 2075
+Wire Wire Line
+	6480 2075 8245 2075
 $EndSCHEMATC
