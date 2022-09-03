@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Plus4Plus8"
-Date "2022-09-02"
+Date "2022-09-03"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 ""
@@ -377,16 +377,6 @@ Wire Wire Line
 	9020 2460 9020 2425
 NoConn ~ 9320 1475
 Wire Wire Line
-	9320 1575 10000 1575
-Wire Wire Line
-	9320 1775 9900 1775
-Wire Wire Line
-	9320 1975 9800 1975
-Wire Wire Line
-	9320 2075 10100 2075
-Wire Wire Line
-	9320 2175 9700 2175
-Wire Wire Line
 	9320 1675 9395 1675
 Wire Wire Line
 	9395 1675 9395 2425
@@ -417,23 +407,6 @@ Wire Wire Line
 Connection ~ 9480 980 
 Wire Wire Line
 	9480 980  9480 925 
-Wire Wire Line
-	9700 1440 9700 2175
-Connection ~ 9700 2175
-Wire Wire Line
-	9700 2175 10250 2175
-Wire Wire Line
-	9800 1440 9800 1975
-Connection ~ 9800 1975
-Wire Wire Line
-	9900 1440 9900 1775
-Connection ~ 9900 1775
-Wire Wire Line
-	10000 1440 10000 1575
-Connection ~ 10000 1575
-Wire Wire Line
-	10100 1440 10100 2075
-Connection ~ 10100 2075
 Wire Wire Line
 	9320 1375 9480 1375
 Connection ~ 9480 1375
@@ -476,15 +449,7 @@ Wire Wire Line
 	9020 5100 9020 5065
 NoConn ~ 9320 4115
 Wire Wire Line
-	9320 4215 10000 4215
-Wire Wire Line
-	9320 4415 9900 4415
-Wire Wire Line
-	9320 4615 9800 4615
-Wire Wire Line
-	9320 4715 10100 4715
-Wire Wire Line
-	9320 4815 9700 4815
+	9320 4715 9700 4715
 Wire Wire Line
 	9320 4315 9395 4315
 Wire Wire Line
@@ -517,38 +482,10 @@ Connection ~ 9480 3620
 Wire Wire Line
 	9480 3620 9480 3565
 Wire Wire Line
-	9700 4080 9700 4815
-Connection ~ 9700 4815
-Wire Wire Line
-	9800 4080 9800 4615
-Connection ~ 9800 4615
-Wire Wire Line
-	9900 4080 9900 4415
-Connection ~ 9900 4415
-Wire Wire Line
-	10000 4080 10000 4215
-Connection ~ 10000 4215
-Wire Wire Line
-	10000 4215 10255 4215
-Wire Wire Line
-	10100 4080 10100 4715
-Connection ~ 10100 4715
-Wire Wire Line
 	9320 4015 9480 4015
 Connection ~ 9480 4015
 Wire Wire Line
 	9480 4015 9480 3620
-$Comp
-L Device:R_Network05 RN7
-U 1 1 6325F9D2
-P 9900 6645
-F 0 "RN7" H 10188 6691 50  0000 L CNN
-F 1 "4.7k" H 10188 6600 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP6" V 10275 6645 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9900 6645 50  0001 C CNN
-	1    9900 6645
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:DB9_Male_MountingHoles CN7
 U 1 1 6325F9DC
@@ -574,16 +511,6 @@ $EndComp
 Wire Wire Line
 	9020 7865 9020 7830
 NoConn ~ 9320 6880
-Wire Wire Line
-	9320 6980 10000 6980
-Wire Wire Line
-	9320 7180 9900 7180
-Wire Wire Line
-	9320 7380 9800 7380
-Wire Wire Line
-	9320 7480 10100 7480
-Wire Wire Line
-	9320 7580 9700 7580
 Wire Wire Line
 	9320 7080 9395 7080
 Wire Wire Line
@@ -615,21 +542,6 @@ Wire Wire Line
 Connection ~ 9480 6385
 Wire Wire Line
 	9480 6385 9480 6330
-Wire Wire Line
-	9700 6845 9700 7580
-Connection ~ 9700 7580
-Wire Wire Line
-	9800 6845 9800 7380
-Connection ~ 9800 7380
-Wire Wire Line
-	9900 6845 9900 7180
-Connection ~ 9900 7180
-Wire Wire Line
-	10000 6845 10000 6980
-Connection ~ 10000 6980
-Wire Wire Line
-	10100 6845 10100 7480
-Connection ~ 10100 7480
 Wire Wire Line
 	9320 6780 9480 6780
 Connection ~ 9480 6780
@@ -672,16 +584,6 @@ Wire Wire Line
 	9015 10715 9015 10680
 NoConn ~ 9315 9730
 Wire Wire Line
-	9315 9830 9995 9830
-Wire Wire Line
-	9315 10030 9895 10030
-Wire Wire Line
-	9315 10230 9795 10230
-Wire Wire Line
-	9315 10330 10095 10330
-Wire Wire Line
-	9315 10430 9695 10430
-Wire Wire Line
 	9315 9930 9390 9930
 Wire Wire Line
 	9390 9930 9390 10680
@@ -712,21 +614,6 @@ Wire Wire Line
 Connection ~ 9475 9235
 Wire Wire Line
 	9475 9235 9475 9180
-Wire Wire Line
-	9695 9695 9695 10430
-Connection ~ 9695 10430
-Wire Wire Line
-	9795 9695 9795 10230
-Connection ~ 9795 10230
-Wire Wire Line
-	9895 9695 9895 10030
-Connection ~ 9895 10030
-Wire Wire Line
-	9995 9695 9995 9830
-Connection ~ 9995 9830
-Wire Wire Line
-	10095 9695 10095 10330
-Connection ~ 10095 10330
 Wire Wire Line
 	9315 9630 9475 9630
 Connection ~ 9475 9630
@@ -824,19 +711,13 @@ Wire Wire Line
 Wire Wire Line
 	10370 3305 12105 3305
 Wire Wire Line
-	9700 4815 10370 4815
-Wire Wire Line
 	12105 3405 10485 3405
 Wire Wire Line
 	10485 3405 10485 7580
 Wire Wire Line
-	9700 7580 10485 7580
-Wire Wire Line
 	10590 10430 10590 3505
 Wire Wire Line
 	10590 3505 12105 3505
-Wire Wire Line
-	9695 10430 10590 10430
 Text Label 13245 2605 2    50   ~ 0
 d6
 Text Label 13245 2705 2    50   ~ 0
@@ -1034,25 +915,17 @@ Wire Wire Line
 Wire Wire Line
 	10685 5860 12105 5860
 Wire Wire Line
-	9800 1975 10685 1975
-Wire Wire Line
 	12105 5960 10780 5960
 Wire Wire Line
 	10780 5960 10780 4615
-Wire Wire Line
-	9800 4615 10780 4615
 Wire Wire Line
 	10685 7380 10685 6060
 Wire Wire Line
 	10685 6060 12105 6060
 Wire Wire Line
-	9800 7380 10685 7380
-Wire Wire Line
 	12105 6160 10780 6160
 Wire Wire Line
 	10780 6160 10780 10230
-Wire Wire Line
-	9795 10230 10780 10230
 Wire Wire Line
 	7850 1775 7850 8210
 Wire Wire Line
@@ -1074,25 +947,17 @@ Wire Wire Line
 Wire Wire Line
 	10875 8610 12105 8610
 Wire Wire Line
-	9900 1775 10875 1775
-Wire Wire Line
 	10975 4415 10975 8710
 Wire Wire Line
 	10975 8710 12105 8710
-Wire Wire Line
-	9900 4415 10975 4415
 Wire Wire Line
 	12105 8810 11075 8810
 Wire Wire Line
 	11075 8810 11075 7180
 Wire Wire Line
-	9900 7180 11075 7180
-Wire Wire Line
 	12105 8910 10875 8910
 Wire Wire Line
 	10875 8910 10875 10030
-Wire Wire Line
-	9895 10030 10875 10030
 $Comp
 L Analog_Switch:CD4051B U4
 U 1 1 63121140
@@ -1304,8 +1169,6 @@ Wire Wire Line
 Wire Wire Line
 	11345 4430 14030 4430
 Wire Wire Line
-	10000 1575 11345 1575
-Wire Wire Line
 	10255 4215 10255 4530
 Wire Wire Line
 	10255 4530 14030 4530
@@ -1314,13 +1177,9 @@ Wire Wire Line
 Wire Wire Line
 	11345 4630 14030 4630
 Wire Wire Line
-	10000 6980 11345 6980
-Wire Wire Line
 	11435 9830 11435 4730
 Wire Wire Line
 	11435 4730 14030 4730
-Wire Wire Line
-	9995 9830 11435 9830
 Wire Wire Line
 	8245 2075 8245 6265
 Wire Wire Line
@@ -1358,27 +1217,17 @@ Wire Wire Line
 Wire Wire Line
 	11630 7160 14030 7160
 Wire Wire Line
-	10100 2075 11630 2075
-Wire Wire Line
 	14030 7260 11260 7260
 Wire Wire Line
 	11260 7260 11260 5120
-Wire Wire Line
-	11260 5120 10100 5120
-Wire Wire Line
-	10100 5120 10100 4715
 Wire Wire Line
 	11260 7480 11260 7360
 Wire Wire Line
 	11260 7360 14030 7360
 Wire Wire Line
-	10100 7480 11260 7480
-Wire Wire Line
 	11345 10330 11345 7460
 Wire Wire Line
 	11345 7460 14030 7460
-Wire Wire Line
-	10095 10330 11345 10330
 $Comp
 L power:+5V #PWR01
 U 1 1 63544C80
@@ -1815,6 +1664,157 @@ Wire Wire Line
 	6580 1575 7945 1575
 Wire Wire Line
 	6480 1440 6480 2075
+Connection ~ 6480 2075
+Wire Wire Line
+	6480 2075 8245 2075
+Wire Wire Line
+	9320 2175 10100 2175
+Wire Wire Line
+	9320 1975 10000 1975
+Wire Wire Line
+	9320 1775 9900 1775
+Wire Wire Line
+	9320 1575 9800 1575
+Wire Wire Line
+	9320 2075 9700 2075
+Wire Wire Line
+	10100 1440 10100 2175
+Connection ~ 10100 2175
+Wire Wire Line
+	10100 2175 10250 2175
+Wire Wire Line
+	10000 1440 10000 1975
+Connection ~ 10000 1975
+Wire Wire Line
+	10000 1975 10685 1975
+Wire Wire Line
+	9900 1440 9900 1775
+Connection ~ 9900 1775
+Wire Wire Line
+	9900 1775 10875 1775
+Wire Wire Line
+	9800 1440 9800 1575
+Connection ~ 9800 1575
+Wire Wire Line
+	9800 1575 11345 1575
+Wire Wire Line
+	9700 1440 9700 2075
+Connection ~ 9700 2075
+Wire Wire Line
+	9700 2075 11630 2075
+Wire Wire Line
+	9320 4815 10100 4815
+Wire Wire Line
+	9320 4615 10000 4615
+Wire Wire Line
+	9320 4415 9900 4415
+Wire Wire Line
+	9320 4215 9800 4215
+Wire Wire Line
+	9700 4080 9700 4715
+Connection ~ 9700 4715
+Wire Wire Line
+	9700 4715 9700 5120
+Wire Wire Line
+	9700 5120 11260 5120
+Wire Wire Line
+	10100 4080 10100 4815
+Connection ~ 10100 4815
+Wire Wire Line
+	10100 4815 10370 4815
+Wire Wire Line
+	10000 4080 10000 4615
+Connection ~ 10000 4615
+Wire Wire Line
+	10000 4615 10780 4615
+Wire Wire Line
+	9900 4080 9900 4415
+Connection ~ 9900 4415
+Wire Wire Line
+	9900 4415 10975 4415
+Wire Wire Line
+	9800 4080 9800 4215
+Connection ~ 9800 4215
+Wire Wire Line
+	9800 4215 10255 4215
+Wire Wire Line
+	9320 7580 10100 7580
+Wire Wire Line
+	9320 7380 10000 7380
+Wire Wire Line
+	9320 7180 9900 7180
+Wire Wire Line
+	9320 6980 9800 6980
+Wire Wire Line
+	9320 7480 9700 7480
+$Comp
+L Device:R_Network05 RN7
+U 1 1 6325F9D2
+P 9900 6645
+F 0 "RN7" H 10188 6691 50  0000 L CNN
+F 1 "4.7k" H 10188 6600 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 10275 6645 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9900 6645 50  0001 C CNN
+	1    9900 6645
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 6845 10100 7580
+Connection ~ 10100 7580
+Wire Wire Line
+	10100 7580 10485 7580
+Wire Wire Line
+	10000 6845 10000 7380
+Connection ~ 10000 7380
+Wire Wire Line
+	10000 7380 10685 7380
+Wire Wire Line
+	9900 6845 9900 7180
+Connection ~ 9900 7180
+Wire Wire Line
+	9900 7180 11075 7180
+Wire Wire Line
+	9800 6845 9800 6980
+Connection ~ 9800 6980
+Wire Wire Line
+	9800 6980 11345 6980
+Wire Wire Line
+	9700 6845 9700 7480
+Connection ~ 9700 7480
+Wire Wire Line
+	9700 7480 11260 7480
+Wire Wire Line
+	9315 10430 10095 10430
+Wire Wire Line
+	9315 10230 9995 10230
+Wire Wire Line
+	9315 10030 9895 10030
+Wire Wire Line
+	9315 9830 9795 9830
+Wire Wire Line
+	9315 10330 9695 10330
+Wire Wire Line
+	10095 9695 10095 10430
+Connection ~ 10095 10430
+Wire Wire Line
+	10095 10430 10590 10430
+Wire Wire Line
+	9995 9695 9995 10230
+Connection ~ 9995 10230
+Wire Wire Line
+	9995 10230 10780 10230
+Wire Wire Line
+	9895 9695 9895 10030
+Connection ~ 9895 10030
+Wire Wire Line
+	9895 10030 10875 10030
+Wire Wire Line
+	9795 9695 9795 9830
+Connection ~ 9795 9830
+Wire Wire Line
+	9795 9830 11435 9830
+Wire Wire Line
+	9695 9695 9695 10330
 Wire Bus Line
 	13345 2405 13345 2805
 Wire Bus Line
@@ -1827,7 +1827,7 @@ Wire Bus Line
 	15270 6360 15270 6760
 Wire Bus Line
 	3415 2625 3415 4050
-Connection ~ 6480 2075
+Connection ~ 9695 10330
 Wire Wire Line
-	6480 2075 8245 2075
+	9695 10330 11345 10330
 $EndSCHEMATC
