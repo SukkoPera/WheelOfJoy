@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name Plus4Plus8)(type KiCad)(uri ${KIPRJMOD}/Plus4Plus8.pretty)(options "")(descr ""))
+  (lib (name WheelOfJoy)(type KiCad)(uri ${KIPRJMOD}/WheelOfJoy.pretty)(options "")(descr ""))
 )

@@ -1,15 +1,15 @@
 (export (version D)
   (design
-    (source /home/sukko/Documents/kicad/Plus4Plus8/Plus4Plus8.sch)
+    (source /home/sukko/Documents/kicad/WheelOfJoy/WheelOfJoy.sch)
     (date "Sat 03 Sep 2022 14:53:20 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
-        (title Plus4Plus8)
+        (title WheelOfJoy)
         (company SukkoPera)
         (rev 1git)
         (date 2022-09-03)
-        (source Plus4Plus8.sch)
+        (source WheelOfJoy.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))

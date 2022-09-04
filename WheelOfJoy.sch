@@ -4,7 +4,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Plus4Plus8"
+Title "WheelOfJoy"
 Date "2022-09-03"
 Rev "1git"
 Comp "SukkoPera"
