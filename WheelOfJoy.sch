@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "WheelOfJoy"
-Date "2022-09-04"
+Date "2022-09-12"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 ""
@@ -1453,63 +1453,61 @@ $EndComp
 $Comp
 L Connector:DB15_Female_MountingHoles CN9
 U 1 1 636CDFF8
-P 2685 3025
-F 0 "CN9" H 2591 4017 50  0000 C CNN
-F 1 "DB15F" H 2591 3926 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15_Female_EdgeMount_P2.77mm" H 2685 3025 50  0001 C CNN
-F 3 " ~" H 2685 3025 50  0001 C CNN
-	1    2685 3025
+P 1915 3025
+F 0 "CN9" H 1821 4017 50  0000 C CNN
+F 1 "DB15F" H 1821 3926 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-15_Female_EdgeMount_P2.77mm" H 1915 3025 50  0001 C CNN
+F 3 " ~" H 1915 3025 50  0001 C CNN
+	1    1915 3025
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2985 2325 3245 2325
-Wire Wire Line
 	3245 2120 3245 2325
 Wire Wire Line
-	2985 2425 3245 2425
+	2215 2425 3245 2425
 Wire Wire Line
 	3245 2425 3245 2325
 Connection ~ 3245 2325
 Wire Wire Line
-	2985 3625 3245 3625
+	2215 3625 3245 3625
 Wire Wire Line
 	3245 3625 3245 3725
 Wire Wire Line
-	2985 3725 3245 3725
+	2215 3725 3245 3725
 Connection ~ 3245 3725
 Wire Wire Line
 	3245 3725 3245 4050
 Wire Wire Line
-	2685 3925 2685 4050
+	1915 3925 1915 4050
 Wire Wire Line
-	2685 4050 3245 4050
+	1915 4050 3245 4050
 Connection ~ 3245 4050
 Wire Wire Line
 	3245 4050 3245 4160
 Wire Wire Line
-	2985 2525 3315 2525
+	2215 2525 2490 2525
 Wire Bus Line
 	3415 4050 3875 4050
 Text Label 3875 4050 2    50   ~ 0
 data_bus
 Wire Wire Line
-	2985 2625 3315 2625
+	2215 2625 2490 2625
 Wire Wire Line
-	2985 2725 3315 2725
+	2215 2725 2490 2725
 Wire Wire Line
-	2985 2825 3315 2825
+	2215 2825 3315 2825
 Wire Wire Line
-	2985 2925 3315 2925
+	2215 2925 2490 2925
 Wire Wire Line
-	2985 3025 3315 3025
+	2215 3025 3315 3025
 Wire Wire Line
-	2985 3125 3315 3125
+	2215 3125 2490 3125
 Wire Wire Line
-	2985 3225 3315 3225
+	2215 3225 3315 3225
 Wire Wire Line
-	2985 3325 3315 3325
-NoConn ~ 2985 3425
-NoConn ~ 2985 3525
+	2215 3325 3315 3325
+NoConn ~ 2215 3425
+NoConn ~ 2215 3525
 Text Label 3315 3325 2    50   ~ 0
 ~reset
 Wire Wire Line
@@ -1955,6 +1953,62 @@ F 3 "~" H 3470 3725 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3245 3725 3470 3725
+$Comp
+L Device:R_Pack05_SIP_Split RN9
+U 2 1 63C155F9
+P 2640 2725
+F 0 "RN9" V 2600 2980 50  0000 C CNN
+F 1 "100" V 2524 2725 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 2560 2725 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2725 50  0001 C CNN
+	2    2640 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RN9
+U 3 1 63C16C68
+P 2640 2625
+F 0 "RN9" V 2600 2880 50  0000 C CNN
+F 1 "100" V 2524 2625 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 2560 2625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2625 50  0001 C CNN
+	3    2640 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RN9
+U 4 1 63C17F96
+P 2640 2525
+F 0 "RN9" V 2600 2780 50  0000 C CNN
+F 1 "100" V 2524 2525 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 2560 2525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2525 50  0001 C CNN
+	4    2640 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RN9
+U 5 1 63C19092
+P 2640 2925
+F 0 "RN9" V 2600 3175 50  0000 C CNN
+F 1 "100" V 2524 2925 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 2560 2925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2925 50  0001 C CNN
+	5    2640 2925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2215 2325 3245 2325
+Wire Wire Line
+	2790 2525 3315 2525
+Wire Wire Line
+	2790 2725 3315 2725
+Wire Wire Line
+	2790 2925 3315 2925
+Wire Wire Line
+	2790 3125 3315 3125
+Wire Wire Line
+	2790 2625 3315 2625
 Wire Bus Line
 	13345 2405 13345 2805
 Wire Bus Line
@@ -1967,4 +2021,15 @@ Wire Bus Line
 	15270 6360 15270 6760
 Wire Bus Line
 	3415 2625 3415 4050
+$Comp
+L Device:R_Pack05_SIP_Split RN9
+U 1 1 63C134E3
+P 2640 3125
+F 0 "RN9" V 2600 3375 50  0000 C CNN
+F 1 "100" V 2600 2930 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 2560 3125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 3125 50  0001 C CNN
+	1    2640 3125
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
