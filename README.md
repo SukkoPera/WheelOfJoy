@@ -50,7 +50,7 @@ This means that the board works exactly like the one from Solder but the selecti
 The multiplexers used on the board are analog, so the adapter is bidirectional and the ports can also be independently used as 5-bit output ports.
 
 ## Compatibility
-Any Atari-compliant joystick or joypad should work with this board, including Sega MegaDrive/Genesis controller, as pin 5 is connected to +5V.
+Any Atari-compliant joystick or joypad should work with this board, including Sega MegaDrive/Genesis controllers, as **pin 5 is connected to +5V**.
 
 The latter also means that you MUST NOT use the adapter with anything that can pull pin 5 straight to ground, such as 3-button Amiga mice (what would be the purpose of that anyway?).
 
