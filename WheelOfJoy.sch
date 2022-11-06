@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "WheelOfJoy"
-Date "2022-09-12"
+Date "2022-11-06"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 ""
@@ -143,6 +143,7 @@ F 0 "RN2" H 6968 3926 50  0000 L CNN
 F 1 "4.7k" H 6968 3835 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 7055 3880 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6680 3880 50  0001 C CNN
+F 4 "Bussed" H 6680 3880 50  0001 C CNN "Notes"
 	1    6680 3880
 	1    0    0    -1  
 $EndComp
@@ -204,6 +205,7 @@ F 0 "RN3" H 6968 6691 50  0000 L CNN
 F 1 "4.7k" H 6968 6600 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 7055 6645 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6680 6645 50  0001 C CNN
+F 4 "Bussed" H 6680 6645 50  0001 C CNN "Notes"
 	1    6680 6645
 	1    0    0    -1  
 $EndComp
@@ -276,6 +278,7 @@ F 0 "RN4" H 6963 9541 50  0000 L CNN
 F 1 "4.7k" H 6963 9450 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 7050 9495 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6675 9495 50  0001 C CNN
+F 4 "Bussed" H 6675 9495 50  0001 C CNN "Notes"
 	1    6675 9495
 	1    0    0    -1  
 $EndComp
@@ -348,6 +351,7 @@ F 0 "RN5" H 10188 1286 50  0000 L CNN
 F 1 "4.7k" H 10188 1195 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 10275 1240 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9900 1240 50  0001 C CNN
+F 4 "Bussed" H 9900 1240 50  0001 C CNN "Notes"
 	1    9900 1240
 	1    0    0    -1  
 $EndComp
@@ -420,6 +424,7 @@ F 0 "RN6" H 10188 3926 50  0000 L CNN
 F 1 "4.7k" H 10188 3835 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 10275 3880 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9900 3880 50  0001 C CNN
+F 4 "Bussed" H 9900 3880 50  0001 C CNN "Notes"
 	1    9900 3880
 	1    0    0    -1  
 $EndComp
@@ -555,6 +560,7 @@ F 0 "RN8" H 10183 9541 50  0000 L CNN
 F 1 "4.7k" H 10183 9450 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 10270 9495 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9895 9495 50  0001 C CNN
+F 4 "Bussed" H 9895 9495 50  0001 C CNN "Notes"
 	1    9895 9495
 	1    0    0    -1  
 $EndComp
@@ -1637,6 +1643,7 @@ F 0 "RN1" H 6968 1286 50  0000 L CNN
 F 1 "4.7k" H 6968 1195 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 7055 1240 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 6680 1240 50  0001 C CNN
+F 4 "Bussed" H 6680 1240 50  0001 C CNN "Notes"
 	1    6680 1240
 	1    0    0    -1  
 $EndComp
@@ -1753,6 +1760,7 @@ F 0 "RN7" H 10188 6691 50  0000 L CNN
 F 1 "4.7k" H 10188 6600 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP6" V 10275 6645 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9900 6645 50  0001 C CNN
+F 4 "Bussed" H 9900 6645 50  0001 C CNN "Notes"
 	1    9900 6645
 	1    0    0    -1  
 $EndComp
@@ -1961,6 +1969,7 @@ F 0 "RN9" V 2600 2980 50  0000 C CNN
 F 1 "100" V 2524 2725 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 2560 2725 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2725 50  0001 C CNN
+F 4 "Independent" H 2640 2725 50  0001 C CNN "Notes"
 	2    2640 2725
 	0    1    1    0   
 $EndComp
@@ -1972,6 +1981,7 @@ F 0 "RN9" V 2600 2880 50  0000 C CNN
 F 1 "100" V 2524 2625 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 2560 2625 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2625 50  0001 C CNN
+F 4 "Independent" H 2640 2625 50  0001 C CNN "Notes"
 	3    2640 2625
 	0    1    1    0   
 $EndComp
@@ -1983,6 +1993,7 @@ F 0 "RN9" V 2600 2780 50  0000 C CNN
 F 1 "100" V 2524 2525 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 2560 2525 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2525 50  0001 C CNN
+F 4 "Independent" H 2640 2525 50  0001 C CNN "Notes"
 	4    2640 2525
 	0    1    1    0   
 $EndComp
@@ -1994,6 +2005,7 @@ F 0 "RN9" V 2600 3175 50  0000 C CNN
 F 1 "100" V 2524 2925 50  0001 C CNN
 F 2 "Resistor_THT:R_Array_SIP10" V 2560 2925 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 2925 50  0001 C CNN
+F 4 "Independent" H 2640 2925 50  0001 C CNN "Notes"
 	5    2640 2925
 	0    1    1    0   
 $EndComp
@@ -2009,6 +2021,18 @@ Wire Wire Line
 	2790 3125 3315 3125
 Wire Wire Line
 	2790 2625 3315 2625
+$Comp
+L Device:R_Pack05_SIP_Split RN9
+U 1 1 63C134E3
+P 2640 3125
+F 0 "RN9" V 2600 3375 50  0000 C CNN
+F 1 "100" V 2600 2930 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 2560 3125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 3125 50  0001 C CNN
+F 4 "Independent" H 2640 3125 50  0001 C CNN "Notes"
+	1    2640 3125
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	13345 2405 13345 2805
 Wire Bus Line
@@ -2021,15 +2045,4 @@ Wire Bus Line
 	15270 6360 15270 6760
 Wire Bus Line
 	3415 2625 3415 4050
-$Comp
-L Device:R_Pack05_SIP_Split RN9
-U 1 1 63C134E3
-P 2640 3125
-F 0 "RN9" V 2600 3375 50  0000 C CNN
-F 1 "100" V 2600 2930 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 2560 3125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2640 3125 50  0001 C CNN
-	1    2640 3125
-	0    1    1    0   
-$EndComp
 $EndSCHEMATC
