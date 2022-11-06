@@ -8,7 +8,7 @@ The original intent was to figure out how [Solder's 3-joystick Adapter](https://
 
 So I began thinking how to replicate the adapter while avoiding that and suddenly I realized that a very simple solution could be used and that it could easily be extended to support 8 joystick while retaining compatibility with the original adapter.
 
-The board plugs in the User Port, which means that in order to use it on a C16, you will need [a User Port card](https://github.com/SukkoPera/16up).
+The board plugs in the User Port, which means that in order to use it on a C16 or C116, you will need [a User Port card](https://github.com/SukkoPera/16up).
 
 ## Assembly
 I recommend soldering all the ports first, then the resistor arrays. Speaking of those, note that while RN1-8 are *bussed*, RN9 is *independent*. You can replace the latter with 5 normal resistors soldered on every two adjacent holes.
@@ -20,7 +20,7 @@ The adapter can be connected to the computer through a cable with a User Port co
 |1	          | +5V    | 2               |                        |
 |2	          | P0     | B               |                        |
 |3	          | P1     | K               |                        |
-|4	          | P2     | $               |                        |
+|4	          | P2     | 4               |                        |
 |5	          | P3     | 5               |                        |
 |6	          | /RESET | 3               | Not used by this board |
 |7	          | +9V    | 10              | Not used by this board |
@@ -39,8 +39,8 @@ Some pins are not used because I plan to use this same pinout in the future for 
 
 I estimate all the components required to self-build this thing to cost < 10€, probably closer to 5€ if you get them from China.
 
-## Software
-Of course there isn't much software support for this at the moment, but I tested it with [Tron 6](https://plus4world.powweb.com/software/Tron_6) and it works fine in "Solder compatible mode". To test the whole 8 ports I wrote a simple BASIC program and everything seems to work as it should. Now it's up to the developers to write party games for the C16/+4 for up to 10 players!
+## Supported Games
+Of course there isn't much software support for this at the moment but I tested it with [Tron 6](https://plus4world.powweb.com/software/Tron_6) and it works fine in "Solder compatible mode". To test the whole 8 ports I wrote a simple BASIC program and everything seems to work as it should. Now it's up to the developers to write party games for the C16/+4 for up to 10 players!
 
 ## Programming
 The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire button. Channel selection happens in parallel on all multiplexers and is done with the 3 high bits of the User Port.
@@ -48,6 +48,13 @@ The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire bu
 This means that the board works exactly like the one from Solder but the selection value is not restricted to those having exactly one zero. All values will select the corresponding port, software compatible with Solder adapter will select ports 7, 6 and 4 as 4, 5 and 6 respectively (Solder's numbering counts joystick 3 as the one available on [SID cards](https://github.com/SukkoPera/ReSeed).
 
 The multiplexers used on the board are analog, so the adapter is bidirectional and the ports can also be independently used as 5-bit output ports.
+
+## Compatibility
+Any Atari-compliant joystick or joypad should work with this board, including Sega MegaDrive/Genesis controller, as pin 5 is connected to +5V.
+
+The latter also means that you MUST NOT use the adapter with anything that can pull pin 5 straight to ground, such as 3-button Amiga mice (what would be the purpose of that anyway?).
+
+Also keep in mind that the USer Port is only guaranteed to provide 100 mA on the +5V pin, even though I don't think there's anything actually limiting that.
 
 ## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/WheelOfJoy/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
@@ -62,7 +69,7 @@ This documentation is distributed *as is* and WITHOUT ANY EXPRESS OR IMPLIED WAR
 ## Support the Project
 If you want to get some boards manufactured, you can get them from PCBWay through this link:
 
-[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/WheelOfJoy_V2.html)
+[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/WheelOfJoy_Commodore_16_116_4_8_Player_Joystick_Adapter_059c7037.html)
 
 You get my gratitude and cheap, professionally-made and good quality PCBs, I get some credit that will help with this and [other projects](https://www.pcbway.com/project/member/shareproject/?bmbid=41100). You won't even have to worry about the various PCB options, it's all pre-configured for you!
 
