@@ -1,5 +1,5 @@
 # WheelOfJoy
-WheelOfJoy is an Open Hardware 8-player joystick adapter for the Commodore 16 and Plus/4.
+WheelOfJoy is an Open Hardware 8-player joystick adapter for the Commodore 16, 116 and Plus/4.
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/WheelOfJoy/master/img/render-top.png)
 
@@ -7,6 +7,8 @@ WheelOfJoy is an Open Hardware 8-player joystick adapter for the Commodore 16 an
 The original intent was to figure out how [Solder's 3-joystick Adapter](https://plus4world.powweb.com/hardware/3fach_Joystickadapter_Synergy) worked. It was pretty easy once I realized that the User Port has an output latch, but that also meant that even these 3 extra ports would suffer from the "bouncing ground" effect which prevents using powered controllers.
 
 So I began thinking how to replicate the adapter while avoiding that and suddenly I realized that a very simple solution could be used and that it could easily be extended to support 8 joystick while retaining compatibility with the original adapter.
+
+WheelOfJoy only supports one button per joystick, but it has [a smaller brother](https://github.com/SukkoPera/WheelOfJoyMini) with only four ports that supports 2 buttons per joystick.
 
 The board plugs in the User Port, which means that in order to use it on a C16 or C116, you will need [a User Port card](https://github.com/SukkoPera/16up).
 
@@ -40,12 +42,14 @@ Some pins are not used because I plan to use this same pinout in the future for 
 I estimate all the components required to self-build this thing to cost < 10€, probably closer to 5€ if you get them from China.
 
 ## Supported Games
-Of course there isn't much software support for this at the moment but I tested it with [Tron 6](https://plus4world.powweb.com/software/Tron_6) and it works fine in "Solder compatible mode". To test the whole 8 ports I wrote a simple BASIC program and everything seems to work as it should. Now it's up to the developers to write party games for the C16/+4 for up to 10 players!
+Of course there isn't much software support for this at the moment but Luca/FIRE was kind enough to make [Tron 8 WOJ](https://plus4world.powweb.com/software/Tron_8_WOJ), an hack of Solder's [Tron 6](https://plus4world.powweb.com/software/Tron_6) (which can still be used in order to test the "Solder compatible mode") featuring 8 players that can all be controlled through joysticks connected to a WheelOfJoy. This is probably the first 8-player game for the x264 series ever made!
+
+Now it's up to the developers to write more party games for the C16/+4 for up to 10 players!
 
 ## Programming
 The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire button. Channel selection happens in parallel on all multiplexers and is done with the 3 high bits of the User Port:
 
-1. Write a value N at the User Port register depending on the port you want to read. General formula for port P is the following:
+1. Write a value N at the User Port register depending on the port you want to read. General formula for port P ∈ [1,8] is the following:
 
    ```N = ((P - 1) << 5) | 0x1F```
 
@@ -70,7 +74,7 @@ The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire bu
 
    Every bit will be 0 if the corresponding direction/button is pressed, 1 otherwise.
 
-This means that the board works exactly like the one from Solder but the selection value is not restricted to those having exactly one zero. All values will select the corresponding port, software compatible with Solder adapter will select ports 7, 6 and 4 as 4, 5 and 6 respectively (Solder's numbering counts joystick 3 as the one available on [SID cards](https://github.com/SukkoPera/ReSeed).
+This means that the board works exactly like the one from Solder but the selection value is not restricted to those having exactly one zero. All values will select the corresponding port, software compatible with Solder adapter will select ports 7, 6 and 4 as 4, 5 and 6 respectively (Solder's numbering counts joystick 3 as the one available on [SID cards](https://github.com/SukkoPera/ReSeed)).
 
 The multiplexers used on the board are analog, so the adapter is bidirectional and the ports can also be independently used as 5-bit output ports.
 
