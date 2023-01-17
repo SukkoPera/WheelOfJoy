@@ -43,7 +43,32 @@ I estimate all the components required to self-build this thing to cost < 10€,
 Of course there isn't much software support for this at the moment but I tested it with [Tron 6](https://plus4world.powweb.com/software/Tron_6) and it works fine in "Solder compatible mode". To test the whole 8 ports I wrote a simple BASIC program and everything seems to work as it should. Now it's up to the developers to write party games for the C16/+4 for up to 10 players!
 
 ## Programming
-The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire button. Channel selection happens in parallel on all multiplexers and is done with the 3 high bits of the User Port.
+The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire button. Channel selection happens in parallel on all multiplexers and is done with the 3 high bits of the User Port:
+
+1. Write a value N at the User Port register depending on the port you want to read. General formula for port P is the following:
+
+   ```N = ((P - 1) << 5) | 0x1F```
+
+   Or just pick your value from the following table:
+
+   | # | Binary    | Hex| Dec | Notes                        |
+   |---|-----------|----|-----|------------------------------|
+   | 1 | 000 11111 | 1F |  31 |                              |
+   | 2 | 001 11111 | 3F |  63 |                              |
+   | 3 | 010 11111 | 5F |  95 |                              |
+   | 4 | 011 11111 | 7F | 127 | Port 6 in Solder's numbering |
+   | 5 | 100 11111 | 9F | 159 |                              |
+   | 6 | 101 11111 | BF | 191 | Port 5 in Solder's numbering |
+   | 7 | 110 11111 | DF | 223 | Port 4 in Solder's numbering |
+   | 8 | 111 11111 | FF | 255 |                              |
+
+2. Read the value of the User Port register, the lower 5 bits will report direction/button status:
+
+   | Bit 7 | Bit 6 | Bit 5 | Bit 4 | Bit 3 | Bit 2 | Bit 1 | Bit 0 |
+   |-------|-------|-------|-------|-------|-------|-------|-------|
+   |   X   |   X   |   X   | Fire  | Left  | Right | Down  | Up    |
+
+   Every bit will be 0 if the corresponding direction/button is pressed, 1 otherwise.
 
 This means that the board works exactly like the one from Solder but the selection value is not restricted to those having exactly one zero. All values will select the corresponding port, software compatible with Solder adapter will select ports 7, 6 and 4 as 4, 5 and 6 respectively (Solder's numbering counts joystick 3 as the one available on [SID cards](https://github.com/SukkoPera/ReSeed).
 
@@ -54,7 +79,7 @@ Any Atari-compliant joystick or joypad should work with this board, including Se
 
 The latter also means that you MUST NOT use the adapter with anything that can pull pin 5 straight to ground, such as 3-button Amiga mice (what would be the purpose of that anyway?).
 
-Also keep in mind that the USer Port is only guaranteed to provide 100 mA on the +5V pin, even though I don't think there's anything actually limiting that.
+Also keep in mind that the User Port is only guaranteed to provide 100 mA on the +5V pin, even though I don't think there's anything actually limiting that.
 
 ## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/WheelOfJoy/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
@@ -62,7 +87,7 @@ If you want to get this board produced, you are recommended to get [the latest r
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
 
 ## License
-The WheelOfJoy documentation, including the design itself, is copyright &copy; SukkoPera 2019-2021 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The WheelOfJoy documentation, including the design itself, is copyright &copy; SukkoPera 2022 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 This documentation is distributed *as is* and WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES whatsoever with respect to its functionality, operability or use, including, without limitation, any implied warranties OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE or infringement. We expressly disclaim any liability whatsoever for any direct, indirect, consequential, incidental or special damages, including, without limitation, lost revenues, lost profits, losses resulting from business interruption or loss of data, regardless of the form of action or legal theory under which the liability may be asserted, even if advised of the possibility or likelihood of such damages.
 
