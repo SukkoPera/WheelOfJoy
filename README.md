@@ -10,10 +10,10 @@ So I began thinking how to replicate the adapter while avoiding that and suddenl
 
 WheelOfJoy only supports one button per joystick, but it has [a smaller brother](https://github.com/SukkoPera/WheelOfJoyMini) with only four ports that supports 2 buttons per joystick.
 
-The board plugs in the User Port, which means that in order to use it on a C16 or C116, you will need [a User Port card](https://github.com/SukkoPera/16up).
+The board plugs into the User Port, which means that in order to use it on a C16 or C116, you will need [a User Port card](https://github.com/SukkoPera/16up).
 
 ## Assembly
-I recommend soldering all the ports first, then the resistor arrays. Speaking of those, note that while RN1-8 are *bussed*, RN9 is *independent*. You can replace the latter with 5 normal resistors soldered on every two adjacent holes.
+I recommend soldering all the ports first, then the resistor arrays. Speaking of those, note that while RN1-8 are *bussed*, RN9 is *independent*/*isolated*. You can replace the latter with 5 normal resistors soldered on every two adjacent holes.
 
 The adapter can be connected to the computer through a cable with a User Port connector on one side and a male DB-15 on the other. I did this so that the adapter can be placed more freely on the table so that all players can reach it comfortably. The adapter-end of the cable can also be soldered directly to it, if you prefer. Pin names are noted on the board, but here's a handy table:
 
@@ -44,7 +44,9 @@ I estimate all the components required to self-build this thing to cost < 10€,
 ## Supported Games
 Of course there isn't much software support for this at the moment but Luca/FIRE was kind enough to make [Tron 8 WOJ](https://plus4world.powweb.com/software/Tron_8_WOJ), an hack of Solder's [Tron 6](https://plus4world.powweb.com/software/Tron_6) (which can still be used in order to test the "Solder compatible mode") featuring 8 players that can all be controlled through joysticks connected to a WheelOfJoy. This is probably the first 8-player game for the x264 series ever made!
 
-Now it's up to the developers to write more party games for the C16/+4 for up to 10 players!
+[Haegar](https://plus4world.powweb.com/members/Haegar) was the first developer to make a new game that supports WheelOfJoy natively: it is called [Bombtank](https://plus4world.powweb.com/software/Bombtank) and it supports up to 12 players!
+
+Now it's up to the developers to write more party games! I'd happily send you some free PCBs if you are interested in making one, just ask!
 
 ## Programming
 The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire button. Channel selection happens in parallel on all multiplexers and is done with the 3 high bits of the User Port:
@@ -89,6 +91,9 @@ Also keep in mind that the User Port is only guaranteed to provide 100 mA on the
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/WheelOfJoy/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
 
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
+
+## Enclosure
+A 3D-printable enclosure is currently available for this board, it was kindly contributed by Haegar and it is available on [Thingiverse](https://www.thingiverse.com/thing:6638975).
 
 ## License
 The WheelOfJoy documentation, including the design itself, is copyright &copy; SukkoPera 2022 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
