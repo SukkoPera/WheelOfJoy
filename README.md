@@ -3,7 +3,7 @@ WheelOfJoy is an Open Hardware 8-player joystick adapter originally designed for
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/WheelOfJoy/master/img/render-top.png)
 
-It also works on the VIC20, Commodore 64, Commodore 128 and even on the Commodore PETs and the CBM-II.
+It also works on the VIC20, Commodore 64, Commodore 128 and even on the Commodore PETs and the CBM-II and can easily be used on any platforms that provides in 8-bit bidirectional port (or 5 input pins and 3 output pins).
 
 ## Summary
 The original intent was to figure out how [Solder's 3-joystick Adapter](https://plus4world.powweb.com/hardware/3fach_Joystickadapter_Synergy) worked. It was pretty easy once I realized that the User Port has an output latch, but that also meant that even these 3 extra ports would suffer from the "bouncing ground" effect which prevents using powered controllers.
@@ -88,7 +88,7 @@ The board uses 5 8-to-1 multiplexers, one per direction plus one for the fire bu
 
 This means that the board works exactly like the one from Solder but the selection value is not restricted to those having exactly one zero. All values will select the corresponding port, software compatible with Solder adapter will select ports 7, 6 and 4 as 4, 5 and 6 respectively (Solder's numbering counts joystick 3 as the one available on [SID cards](https://github.com/SukkoPera/ReSeed)).
 
-The multiplexers used on the board are analog, so the adapter is bidirectional and the ports can also be independently used as 5-bit output ports.
+The multiplexers used on the board are analog, so the adapter is bidirectional and the ports can also be independently used as 5-bit output ports, which might open interesting possibilities...
 
 ## Compatibility
 Any Atari-compliant joystick or joypad should work with this board, including Sega MegaDrive/Genesis controllers, as **pin 5 is connected to +5V**.
