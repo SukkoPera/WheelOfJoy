@@ -3,12 +3,12 @@ WheelOfJoy is an Open Hardware 8-player joystick adapter originally designed for
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/WheelOfJoy/master/img/render-top.png)
 
-It also works on the VIC20, Commodore 64, Commodore 128 and even on the Commodore PETs and the CBM-II and can easily be used on any platforms that provides an 8-bit bidirectional port (or 5 input pins and 3 output pins).
+It also works on the VIC20, Commodore 64, Commodore 128 and even on the Commodore PETs and the CBM-II and can easily be used on any platform that provides an 8-bit bidirectional port (or 5 input pins and 3 output pins).
 
 ## Summary
 The original intent was to figure out how [Solder's 3-joystick Adapter](https://plus4world.powweb.com/hardware/3fach_Joystickadapter_Synergy) worked. It was pretty easy once I realized that the User Port has an output latch, but that also meant that even these 3 extra ports would suffer from the "bouncing ground" effect which prevents using powered controllers.
 
-So I began thinking how to replicate the adapter while avoiding that and suddenly I realized that a very simple solution could be used and that it could easily be extended to support 8 joystick while retaining compatibility with the original adapter.
+So I began thinking how to replicate the adapter while avoiding that and suddenly I realized that a very simple solution could be used and that it could easily be extended to support 8 joysticks while retaining compatibility with the original adapter.
 
 One day I found out that WheelOfJoy emulation had been added to [VICE](https://vice-emu.sourceforge.io/) and that it also supported it in the C64 and other emulators, so I used that information to come up with connection diagrams for many more machines.
 
@@ -19,7 +19,7 @@ The board plugs into the User Port, which means that in order to use it on a C16
 ## Assembly
 I recommend soldering all the ports first, then the resistor arrays. Speaking of those, note that while RN1-8 are *bussed*, RN9 is *independent*/*isolated*. You can replace the latter with 5 normal resistors soldered on every two adjacent holes.
 
-The adapter can be connected to the computer through a cable with a User Port connector on one side and a male DB-15 on the other. I did this so that the adapter can be placed more freely on the table so that all players can reach it comfortably, but it also turned out to be a good choice in order to be able to use the adapter on different machines, since all you need is a different cable, while the board can stay the same. So make sure to label what platform(s) your cable is made for!
+The adapter can be connected to the computer through a cable with a User Port connector on one side and a male DB-15 on the other. I did this so that the adapter can be placed more freely on the table so that all players can reach it conveniently, but it also turned out to be a good choice in order to be able to use the adapter on different machines, since all you need is a different cable, while the board stays the same. So make sure to label what platform(s) your cable is made for!
 
 The adapter-end of the cable can also be soldered directly to it, if you prefer. Pin names are noted on the board, but here's a handy table:
 
