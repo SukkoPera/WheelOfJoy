@@ -124,7 +124,7 @@ You can also buy me a coffee if you want:
 <a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## Credits
-* Thanks to Solder for being such a prolific hacked and a great inspiration :).
+* Thanks to Solder for being such a prolific hacker and a great inspiration :).
 * 3D model of [DB-9](https://grabcad.com/library/d-sub-9-pin-male-1) and [DB-15 connector](https://grabcad.com/library/d-sub-15-pin-female-2-lines-1) by Alex K.
 * Font used for port numbers is [Agreement Signature by wepfont](https://www.fontspace.com/a-agreement-signature-font-f52534) (800 DPI).
 * Font used for the logo is [Senja Santuy by Zuzulgo](https://www.fontspace.com/senja-santuy-font-f74971) (450 DPI).
