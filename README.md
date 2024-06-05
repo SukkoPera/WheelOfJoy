@@ -3,7 +3,7 @@ WheelOfJoy is an Open Hardware 8-player joystick adapter originally designed for
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/WheelOfJoy/master/img/render-top.png)
 
-It also works on the VIC20, Commodore 64, Commodore 128 and even on the Commodore PETs and the CBM-II and can easily be used on any platforms that provides in 8-bit bidirectional port (or 5 input pins and 3 output pins).
+It also works on the VIC20, Commodore 64, Commodore 128 and even on the Commodore PETs and the CBM-II and can easily be used on any platforms that provides an 8-bit bidirectional port (or 5 input pins and 3 output pins).
 
 ## Summary
 The original intent was to figure out how [Solder's 3-joystick Adapter](https://plus4world.powweb.com/hardware/3fach_Joystickadapter_Synergy) worked. It was pretty easy once I realized that the User Port has an output latch, but that also meant that even these 3 extra ports would suffer from the "bouncing ground" effect which prevents using powered controllers.
@@ -23,23 +23,23 @@ The adapter can be connected to the computer through a cable with a User Port co
 
 The adapter-end of the cable can also be soldered directly to it, if you prefer. Pin names are noted on the board, but here's a handy table:
 
-| DB-15 Pin # | Signal | +4 User Port Pin | PET/VIC20/C64/C128 User Port Pin | CBM2 User Port Pin | Notes                  |
-|-------------|--------|------------------|----------------------------------|--------------------|------------------------|
-|1	          | +5V    | 2                | 2                                | 24                 |                        |
-|2	          | P0     | B                | C                                | 14                 |                        |
-|3	          | P1     | K                | D                                | 13                 |                        |
-|4	          | P2     | 4                | E                                | 12                 |                        |
-|5	          | P3     | 5                | F                                | 11                 |                        |
-|6	          | /RESET | 3                | 3                                | N/A                | Not used by this board |
-|7	          | +9V    | 10               | 10                               | N/A                | Not used by this board |
-|8	          | GND    | 1, 12, A or N    | 1, 12, A or N                    | 1 or 3             |                        |
-|9	          | +5V    | 2                | 2                                | 24                 |                        |
-|10	          | P4     | 6                | H                                | 10                 |                        |
-|11	          | P5     | 7                | J                                | 9                  |                        |
-|12	          | P6     | J                | K                                | 8                  |                        |
-|13	          | P7     | F                | L                                | 7                  |                        |
-|14	          | -9V    | 11               | 11                               | N/A                | Not used by this board |
-|15	          | GND    | 1, 12, A or N    | 1, 12, A or N                    | 1 or 3             |                        |
+| DB-15 Pin # | Signal | +4 User Port Pin | PET/VIC20/C64/C128 User Port Pin | CBM-II User Port Pin | Notes                  |
+|-------------|--------|------------------|----------------------------------|----------------------|------------------------|
+|1	          | +5V    | 2                | 2                                | 24                   |                        |
+|2	          | P0     | B                | C                                | 14                   |                        |
+|3	          | P1     | K                | D                                | 13                   |                        |
+|4	          | P2     | 4                | E                                | 12                   |                        |
+|5	          | P3     | 5                | F                                | 11                   |                        |
+|6	          | /RESET | 3                | 3                                | N/A                  | Not used by this board |
+|7	          | +9V    | 10               | 10                               | N/A                  | Not used by this board |
+|8	          | GND    | 1, 12, A or N    | 1, 12, A or N                    | 1 or 3               |                        |
+|9	          | +5V    | 2                | 2                                | 24                   |                        |
+|10	          | P4     | 6                | H                                | 10                   |                        |
+|11	          | P5     | 7                | J                                | 9                    |                        |
+|12	          | P6     | J                | K                                | 8                    |                        |
+|13	          | P7     | F                | L                                | 7                    |                        |
+|14	          | -9V    | 11               | 11                               | N/A                  | Not used by this board |
+|15	          | GND    | 1, 12, A or N    | 1, 12, A or N                    | 1 or 3               |                        |
 
 Some pins are not used because I plan to use this same pinout in the future for any other boards I may make requiring one.
 
