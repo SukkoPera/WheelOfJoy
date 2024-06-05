@@ -19,7 +19,9 @@ The board plugs into the User Port, which means that in order to use it on a C16
 ## Assembly
 I recommend soldering all the ports first, then the resistor arrays. Speaking of those, note that while RN1-8 are *bussed*, RN9 is *independent*/*isolated*. You can replace the latter with 5 normal resistors soldered on every two adjacent holes.
 
-The adapter can be connected to the computer through a cable with a User Port connector on one side and a male DB-15 on the other. I did this so that the adapter can be placed more freely on the table so that all players can reach it comfortably, but it also turned out to be a good choice in order to be able to use the adapter on different machines, since all you need is a different cable, while the board can stay the same. The adapter-end of the cable can also be soldered directly to it, if you prefer. Pin names are noted on the board, but here's a handy table:
+The adapter can be connected to the computer through a cable with a User Port connector on one side and a male DB-15 on the other. I did this so that the adapter can be placed more freely on the table so that all players can reach it comfortably, but it also turned out to be a good choice in order to be able to use the adapter on different machines, since all you need is a different cable, while the board can stay the same. So make sure to label what platform(s) your cable is made for!
+
+The adapter-end of the cable can also be soldered directly to it, if you prefer. Pin names are noted on the board, but here's a handy table:
 
 | DB-15 Pin # | Signal | +4 User Port Pin | PET/VIC20/C64/C128 User Port Pin | CBM2 User Port Pin | Notes                  |
 |-------------|--------|------------------|----------------------------------|--------------------|------------------------|
